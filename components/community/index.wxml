@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="text">
+      <view class="text_nerby">
+        <view class="line_flag"></view>
+        <text>附近的小区</text>
+      </view>
+        <image data-id="6" class="position_icon" src="/assets/imgs/position.png"></image>
+        <navigator url="/pages/select-address/index" class="position">地图选小区</navigator>
+    </view>
+
+    <block wx:for-items="{{pList}}">
+        <view class="flex item">
+            <view class="item_left">
+                <image src="{{item['fields']['pic']}}"/>
+            </view>
+            <view class="flex_auto item_middle">
+                <view><text class="title">{{item['fields']['name']}}</text></view>
+                <view><text class="sub_title">{{item['fields']['characteristic']}}</text></view>
+            </view>
+            <view class="item_right">
+                <view><text class="score">{{item['fields']['min_score']}}</text></view>
+                <view><text class="action" bindtap="product_detail" data-id="{{item['pk']}}">选择该小区</text></view>
+            </view>
+        </view>
+    </block>
+</view>

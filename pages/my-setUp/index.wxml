@@ -1,0 +1,13 @@
+<!--pages/my-setUp/index.wxml-->
+<view class="container">
+  <view class="my-item">
+            <navigator url="/pages/book-set/index" hover-class="navigator-hover"><image src='../../assets/imgs/my-info/myquan.png'></image>预约设置</navigator>
+  </view>
+  <view class="my-item">
+                <navigator url="/pages/coach_login/index" hover-class="navigator-hover"><image src='../../assets/imgs/my-info/myquan.png'></image>教练登录</navigator>
+  </view>
+    <view class="my-item" bindtap="aboutUs">
+    关于我们
+  </view>
+  <view style="height:20rpx;background: #eee;width:100%;"></view>
+</view>

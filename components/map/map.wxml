@@ -1,0 +1,29 @@
+<!--components/map/map.wxml-->
+<view class="main">
+
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}"
+ markers="{{markers}}"
+ style="width:750rpx;height:750rpx"
+ bindmarkertap="markertap"
+ show-location scale="12" controls="{{controls}}">
+</map>
+
+<view class="swiper_area">
+<swiper current="{{current}}" style="height:{{map_width}}px"
+ bindchange="currentChange">
+  <block wx:for="{{markers}}">
+    <swiper-item bindtap="gotoDetail" data-item="{{item.data}}">
+    <view style="padding: 0px 10px;"
+          data-item="{{item.data}}">
+       <text data-item="{{item.data}}"
+        class="itemtext_title">{{item.data.title}}</text>
+      <text data-item="{{item.data}}"
+       class="address">{{item.data.address}}</text>
+    </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+</view>
+
+</view>

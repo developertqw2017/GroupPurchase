@@ -1,0 +1,23 @@
+<view class="container">
+    <view class="text">
+        <view class="line_flag"></view>
+        <text>正在热</text>
+    </view>
+
+    <block wx:for-items="{{pList}}">
+        <view class="flex item">
+            <view class="item_left">
+                <image src="{{item['fields']['pic']}}"/>
+            </view>
+            <view class="flex_auto item_middle">
+                <view><text class="title">{{item['fields']['name']}}</text></view>
+                <view><text class="sub_title">{{item['fields']['characteristic']}}</text></view>
+                <view><text class="actor">{{item['fields']['oringinal_price']}}</text></view>
+            </view>
+            <view class="item_right">
+                <view><text class="score">{{item['fields']['min_score']}}</text></view>
+                <view><text class="action" bindtap="product_detail" data-id="{{item['pk']}}">加入购物车</text></view>
+            </view>
+        </view>
+    </block>
+</view>

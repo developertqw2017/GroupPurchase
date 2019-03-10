@@ -1,0 +1,92 @@
+.goods{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 15rpx;
+}
+.appointment{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 15rpx;
+}
+.recommendation{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 15rpx;
+}
+
+.goods > .goods-box{
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius: 10px;
+  border: 1px solid #FBDBFD;
+}
+.appointment > .goods-box{
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+}
+.recommendation > .goods-box{
+  height: 472rpx;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+}
+
+goods > .goods-box > .img-box{
+  width: 350rpx;
+  height: 350rpx;
+  overflow: hidden;
+}
+.appointment > .goods-box > .img-box{
+  width: 750rpx;
+  height: 350rpx;
+  overflow: hidden;
+}
+.recommendation > .goods-box > .img-box{
+  width: 750rpx;
+  height: 350rpx;
+  overflow: hidden;
+}
+
+.goods > .goods-box>.img-box>image{
+   width: 350rpx;
+   height: 350rpx;
+}
+.appointment > .goods-box > .img-box > image{
+   width: 700rpx;
+   height: 350rpx;
+}
+.recommendation > .goods-box > .img-box > image{
+   width: 700rpx;
+   height: 350rpx;
+}
+
+.goods-box >.goods-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+  display: block
+}
+.goods-box .goods-price{
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0;
+  color:#e64340;
+  margin-left: 24rpx;
+  display: block;
+}
